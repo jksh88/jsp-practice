@@ -17,7 +17,7 @@
 	}
 	
 	String theTask = request.getParameter("theTask");
-	if (theTask != null) {
+	if (theTask != null && !theTask.trim().equals("")) {
 		tasks.add(theTask);
 	}
 	%>
